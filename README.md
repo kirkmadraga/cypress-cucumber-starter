@@ -1,4 +1,4 @@
-# Cypress + Cucumber Starter Project
+# [Cypress](https://cypress.io/) + [Cucumber](https://cucumber.io/) Starter Project
 
 Template test framework that uses page object model for end-to-end testing.
 
@@ -35,12 +35,12 @@ When you are ready to write your tests, you may delete the demo-related files un
 3. Implement page objects under `cypress/e2e/pages`
 
 ## Reports
-[TODO](https://github.com/Shelex/cypress-allure-plugin)
+The default HTML report is *cucumber-html-report.html* generated after running tests if `cypress-cucumber-preprocessor.html.enabled` in package.json is set to true.
+It is also possible to set up [cypress-allure-plugin](https://github.com/Shelex/cypress-allure-plugin) or [multiple-cucumber-html-reporter](https://github.com/WasiqB/multiple-cucumber-html-reporter)
 
 ## Configuration
 You can override the default configuration by passing additional command line parameters to the npm script, e.g., `npm run cypress:test -- --browser firefox -- --headed`
-
-Alternatively, you can provide your own config file entirely in cases where system under test runs in different environments.
+Alternatively, you can provide your own config file entirely, in cases where system under test runs in different environments.
 
 More on Cypress configuration [here](https://docs.cypress.io/guides/references/configuration).
 The cucumber preprocessor configuration documentation can be found [here](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/configuration.md)
