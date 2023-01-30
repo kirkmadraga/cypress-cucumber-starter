@@ -1,0 +1,40 @@
+{
+  "name": "cypress-cucumber-starter",
+  "version": "1.0.0",
+  "description": "Test automation template framework for end-to-end testing",
+  "main": "index.js",
+  "scripts": {
+    "cypress:start": "cypress open --e2e --browser chrome",
+    "cypress:test": "cypress run --e2e"
+  },
+  "author": "Kirk Madraga",
+  "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "messages": {
+      "enabled": true,
+      "output": "report/messages.ndjson"
+    },
+    "json": {
+      "enabled": false,
+      "output": "report/log.json",
+      "formatter": "cucumber-json-formatter.exe"
+    },
+    "html": {
+      "enabled": true
+    },
+    "stepDefinitions": [
+      "[filepath]/**/*.{js,ts}",
+      "[filepath].{js,ts}",
+      "cypress/e2e/step_definitions/*.{js,ts}",
+      "[filepath]\\***.{js,ts}",
+      "[filepath].{js,ts}",
+      "cypress\\e2e\\step_definitions\\/**/*.{js,ts}"
+    ]
+  },
+  "devDependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^15.1.2",
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "@cypress/xpath": "^2.0.3",
+    "cypress": "^12.4.1"
+  }
+}
