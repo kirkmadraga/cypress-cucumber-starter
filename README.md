@@ -40,7 +40,7 @@ It is also possible to set up [cypress-allure-plugin](https://github.com/Shelex/
 
 ## Configuration
 You can override the default configuration by passing additional command line parameters to the npm script, e.g., `npm run cypress:test -- --browser firefox -- --headed`
-Alternatively, you can provide your own config file entirely, in cases where system under test runs in different environments.
+Alternatively, you can provide your own config file entirely, in cases where system under test runs in different environments, e.g., `npm run cypress:test -- --config-file cypress.stage.config.json`
 
 More on Cypress configuration [here](https://docs.cypress.io/guides/references/configuration).
 The cucumber preprocessor configuration documentation can be found [here](https://github.com/badeball/cypress-cucumber-preprocessor/blob/master/docs/configuration.md)
