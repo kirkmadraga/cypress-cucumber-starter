@@ -1,4 +1,5 @@
-# https://github.com/github/gitignore/edit/main/Node.gitignore
+.DS_Store
+
 # Cypress
 cypress/videos/
 cypress/screenshots/
